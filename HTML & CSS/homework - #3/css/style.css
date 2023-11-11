@@ -1,0 +1,111 @@
+/*----------Basic Styles---------- */
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li,
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+}
+
+/* ===================== */
+
+.wrapper {
+	height: 100vh;
+
+	display: grid;
+	grid-template-rows: 10% 5% 70% 15%;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas:
+		"header header"
+		"nav nav"
+		"aside main"
+		'footer footer';
+}
+
+.header {
+	grid-area: header;
+
+	background: #fadb60;
+}
+
+.nav {
+	grid-area: nav;
+
+	background: rgb(246, 97, 97);
+}
+
+.aside {
+	grid-area: aside;
+
+	background: rgb(59, 236, 216);
+}
+
+.main {
+	grid-area: main;
+
+	background: #adadad;
+}
+
+.footer {
+	grid-area: footer;
+
+	background: rgb(103, 103, 244);
+}
+
+.styled-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-weight: 700;
+	font-size: 22px;
+}
+
+/*MOBILE*/
+@media (max-width: 767.98px) {
+	.wrapper {
+		/* Тут в принципе не особо правильно задавать в процентах, блок должен растягиваться от ширины (высоты) контента */
+		grid-template-rows: 10% 5% 20% 60% 5%;
+		grid-template-columns: 1fr;
+		grid-template-areas: none;
+	}
+
+	.header,
+	.nav,
+	.aside,
+	.main,
+	.footer {
+		grid-area: auto;
+	}
+}
