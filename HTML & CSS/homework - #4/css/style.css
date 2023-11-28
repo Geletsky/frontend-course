@@ -1,0 +1,153 @@
+/*----------Basic Styles---------- */
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+/* ===================== */
+[class*=__container] {
+  max-width: 1710px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Registration */
+.registration {
+  height: 100vh;
+  position: relative;
+}
+.form-registration {
+  padding: 30px;
+  max-width: 700px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.form-registration__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-registration__line {
+  display: flex;
+}
+.form-registration__label img {
+  padding: 11px;
+  background: rgb(40, 174, 255);
+}
+.form-registration__input {
+  padding: 14px 5px;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #717171;
+}
+.form-registration__input:hover {
+  border: 1px solid rgb(40, 174, 255);
+}
+.form-registration__input:focus {
+  background: #ccc;
+}
+.form-registration__button {
+  padding: 15px 0px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background: rgb(40, 174, 255);
+  transition: all 0.5s ease;
+}
+.form-registration__button:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ===================== */
+/* Search */
+.search {
+  height: 100vh;
+  position: relative;
+}
+.form-search {
+  padding: 30px;
+  max-width: 700px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.form-search__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-search__line {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.form-search__line svg {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+}
+.form-search__input {
+  padding: 14px 50px;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #717171;
+}
+.form-search__input:hover {
+  border: 1px solid rgb(40, 174, 255);
+}
+.form-search__input:focus {
+  background: #ccc;
+}
+.form-search__input:focus + svg path {
+  fill: #000;
+}
+
+/* ===================== */
