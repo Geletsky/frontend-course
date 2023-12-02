@@ -26,7 +26,7 @@
 // #7
 
 // const text = document.getElementById('seven');
-// result = 12 * 12;
+// let result = 12 * 12;
 // text.innerHTML = result;
 
 // #8
@@ -57,27 +57,27 @@
 
 // #13 
 
-// z1 = 6;
-// z2 = 3;
-// result = z1 * z2;
+// const z1 = 6;
+// const z2 = 3;
+// const result = z1 * z2;
 
 // const text = document.querySelector('.out-14');
 // text.innerHTML = result;
 
 // #14
 
-// y1 = 6;
-// y2 = 3;
-// result = y1 / y2;
+// const y1 = 6;
+// const y2 = 3;
+// const result = y1 / y2;
 
 // const text = document.querySelector('.out-15');
 // text.innerHTML = result;
 
 // #15
 
-// x1 = 'Hello';
-// x2 = 5;
-// result = x1 + x2;
+// const x1 = 'Hello';
+// const x2 = 5;
+// const result = x1 + x2;
 
 // const text = document.querySelector('.out-16');
 // text.innerHTML = result;
