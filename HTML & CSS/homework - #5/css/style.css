@@ -1,0 +1,163 @@
+/* Normalize styles */
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+/* ===================== */
+/* Global */
+body {
+  font-family: "IBM Plex Sans";
+  background: linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0) 80%), linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+/* ===================== */
+/* Login */
+.login {
+  position: relative;
+  height: 100vh;
+}
+.login__form {
+  max-width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 35px;
+  background: #4a4650;
+}
+.form-login__header {
+  width: 100%;
+  background: #5f5b69;
+  border-radius: 35px 35px 0px 0px;
+}
+.form-login__title {
+  padding: 25px 0px;
+  font-size: 22px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.form-login__wrapper {
+  padding: 30px 30px 30px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.form-login__line {
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid #8E869D;
+}
+.form-login__privacy {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-login__input {
+  padding: 15px 0px;
+  color: #8E869D;
+  font-weight: 600;
+  outline: none;
+  background: transparent;
+}
+.form-login__label {
+  color: #8E869D;
+  cursor: pointer;
+}
+.form-login__label::before {
+  margin: 0px 10px 0px 0px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: #2a272b;
+}
+.form-login input[type=checkbox] {
+  display: none;
+}
+.form-login input[type=checkbox]:checked + label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../img/icon-check.svg") center/contain no-repeat;
+  background-color: #2a272b;
+}
+.form-login__link-forgot {
+  font-style: italic;
+  color: #8E869D;
+}
+.form-login__actions {
+  padding: 0px 0px 30px 0px;
+}
+.form-login__button {
+  padding: 15px 75px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background: #5f5b69;
+}
+
+/* ===================== */
